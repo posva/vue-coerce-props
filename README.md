@@ -44,7 +44,7 @@ const SpaceTrimmer = {
       coerce(style) {
         // you can access the context as in a computed property
         // NEVER use this.$coerced here as it would create an infinite loop
-        // if you use things comming from data, you may consider using
+        // if you use things coming from data, you may consider using
         // a computed property instead
         return this.possibleValues.includes(style) ? style : 'default'
       },
