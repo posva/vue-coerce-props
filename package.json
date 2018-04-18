@@ -32,12 +32,15 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.14",
     "babel-jest": "^22.4.3",
     "babel-preset-env": "^1.6.1",
     "codecov": "^3.0.0",
     "eslint": "^4.19.1",
     "eslint-config-posva": "^1.3.3",
-    "jest": "^22.4.3"
+    "jest": "^22.4.3",
+    "vue": "^2.5.16",
+    "vue-template-compiler": "^2.5.16"
   },
   "repository": {
     "type": "git",
@@ -48,20 +51,16 @@
   },
   "jest": {
     "collectCoverage": true,
+    "collectCoverageFrom": [
+      "<rootDir>/src/*.js"
+    ],
     "moduleFileExtensions": [
       "js",
-      "json",
-      "vue"
+      "json"
     ],
     "transform": {
-      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
-      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
-    },
-    "coveragePathIgnorePatterns": [
-      "<rootDir>/test/*.js",
-      "<rootDir>/test/.*.js",
-      "<rootDir>/test/*/*.js"
-    ]
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
+    }
   },
   "homepage": "https://github.com/posva/vue-coerce-props#readme"
 }
