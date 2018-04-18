@@ -39,6 +39,16 @@ const SpaceTrimmer = {
       // this function is called by VueCoerceProps
       coerce: text => text.trim(),
     },
+    style: {
+      type: String,
+      coerce(style) {
+        // you can access the context as in a computed property
+        // NEVER use this.$coerced here as it would create an infinite loop
+        // if you use things comming from data, you may consider using
+        // a computed property instead
+        return this.possibleValues.includes(style) ? style : 'default'
+      },
+    },
   },
 }
 ```
