@@ -1,6 +1,6 @@
 {
   "name": "vue-coerce-props",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Coerce props to custom values",
   "main": "dist/vue-coerce-props.cjs.js",
   "module": "dist/vue-coerce-props.es.js",
