@@ -3,19 +3,17 @@ export default {
     const { props } = this.$options
     if (!props) return
 
-    this._$coertions = []
-
-    Object.keys(props)
+    this._$coertions = Object.keys(props)
       .filter(k => props[k].coerce)
-      .forEach(k => {
+      .map(k => {
         const { coerce } = props[k]
-        this._$coertions.push({ k, coerce })
+        return [k, coerce]
       })
   },
 
   computed: {
     $coerced () {
-      return this._$coertions.reduce((c, { k, coerce }) => {
+      return this._$coertions.reduce((c, [k, coerce]) => {
         c[k] = coerce(this.$props[k])
         return c
       }, {})
