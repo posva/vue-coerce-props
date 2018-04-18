@@ -8,6 +8,7 @@ const CoercedProps = {
       type: String,
       coerce: v => v.trim(),
     },
+    other: String,
   },
 
   render (h) {
@@ -21,6 +22,7 @@ describe('VueCoerceProps', () => {
     wrapper = mount(CoercedProps, {
       propsData: {
         value: '  foo bar  ',
+        other: 'hey',
       },
     })
   })
@@ -37,6 +39,10 @@ describe('VueCoerceProps', () => {
     })
     expect(wrapper.props().value).toBe(' bar  ')
     expect(wrapper.vm.$coerced.value).toBe('bar')
+  })
+
+  test('add only what is necessary to $coerced', () => {
+    expect(Object.keys(wrapper.vm.$coerced)).toEqual(['value'])
   })
 
   test('works on components without props', () => {
