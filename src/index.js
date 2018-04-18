@@ -14,7 +14,7 @@ export default {
   computed: {
     $coerced () {
       return this._$coertions.reduce((c, [k, coerce]) => {
-        c[k] = coerce(this.$props[k])
+        c[k] = coerce.call(this, this.$props[k])
         return c
       }, {})
     },

@@ -47,4 +47,32 @@ describe('VueCoerceProps', () => {
       })
     }).not.toThrow()
   })
+
+  test('can use this inside  of coerce', () => {
+    let wrapper
+    expect(() => {
+      wrapper = mount(
+        {
+          render: h => h(),
+          props: {
+            value: String,
+            other: {
+              type: String,
+              coerce (v) {
+                return `${this.value} ${v}!`
+              },
+            },
+          },
+          mixins: [mixin],
+        },
+        {
+          propsData: {
+            value: 'Hello',
+            other: 'Ed',
+          },
+        }
+      )
+    }).not.toThrow()
+    expect(wrapper.vm.$coerced.other).toBe('Hello Ed!')
+  })
 })
