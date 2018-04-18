@@ -1,6 +1,5 @@
 import { mount } from '@vue/test-utils'
 import mixin from '../src'
-import { notDeepEqual } from 'assert'
 
 const CoercedProps = {
   mixins: [mixin],
