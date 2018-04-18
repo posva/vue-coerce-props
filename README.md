@@ -52,6 +52,11 @@ VueCoerceProps will inject a computed property named `$coerced` containing every
 </p>
 ```
 
+## FAQ
+
+* Q: Why not passing component props as second argument?
+  A: That would make every coerce value depend on every prop. At the end `$coerced` is just a computed property
+
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
