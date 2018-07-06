@@ -5,10 +5,7 @@ export default {
 
     this._$coertions = Object.keys(props)
       .filter(k => props[k].coerce)
-      .map(k => {
-        const { coerce } = props[k]
-        return [k, coerce]
-      })
+      .map(k => [k, props[k].coerce])
   },
 
   computed: {
