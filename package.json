@@ -35,15 +35,17 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@vue/test-utils": "^1.0.0-beta.14",
-    "babel-jest": "^23.0.0",
-    "babel-preset-env": "^1.6.1",
-    "codecov": "^3.0.0",
-    "eslint": "^5.0.0",
-    "eslint-config-posva": "^2.0.0",
-    "jest": "^22.4.3",
-    "vue": "^2.5.16",
-    "vue-template-compiler": "^2.5.16"
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@vue/test-utils": "^1.0.0-beta.26",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "codecov": "^3.1.0",
+    "eslint": "^5.9.0",
+    "eslint-config-posva": "^2.0.3",
+    "jest": "^23.6.0",
+    "vue": "^2.5.18",
+    "vue-template-compiler": "^2.5.18"
   },
   "repository": {
     "type": "git",
@@ -51,19 +53,6 @@
   },
   "bugs": {
     "url": "https://github.com/posva/vue-coerce-props/issues"
-  },
-  "jest": {
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "<rootDir>/src/*.js"
-    ],
-    "moduleFileExtensions": [
-      "js",
-      "json"
-    ],
-    "transform": {
-      "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
-    }
   },
   "homepage": "https://github.com/posva/vue-coerce-props#readme"
 }
