@@ -990,9 +990,9 @@
   integrity sha512-SOhuU4wNBxhhTHxYaiG5NY4HBhDIDnJF60GU+2LqHAdKKer86//e4yg69aENCtQ04n0ovz+tq2YPME5t5yp4pw==
 
 "@vue/test-utils@^1.0.0-beta.26":
-  version "1.0.0-beta.26"
-  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-1.0.0-beta.26.tgz#1ae7e1dc2bef4f49f9dbfdfecad342d17d6c5c88"
-  integrity sha512-2bvTgdh4Rh9NqeIrH+rah6AjXUHYxFqLO+NoOMqWXYqSvk1PGgvI5o5sT6Pty4HklIReOZxWxsMpgnJFK9rW+A==
+  version "1.0.0-beta.29"
+  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-1.0.0-beta.29.tgz#c942cf25e891cf081b6a03332b4ae1ef430726f0"
+  integrity sha512-yX4sxEIHh4M9yAbLA/ikpEnGKMNBCnoX98xE1RwxfhQVcn0MaXNSj1Qmac+ZydTj6VBSEVukchBogXBTwc+9iA==
   dependencies:
     dom-event-types "^1.0.0"
     lodash "^4.17.4"
