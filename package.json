@@ -43,7 +43,7 @@
     "codecov": "^3.5.0",
     "eslint": "^5.16.0",
     "eslint-config-posva": "^2.0.3",
-    "jest": "^23.6.0",
+    "jest": "^24.8.0",
     "vue": "^2.6.10",
     "vue-template-compiler": "^2.6.10"
   },
