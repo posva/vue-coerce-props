@@ -76,7 +76,7 @@ describe('VueCoerceProps', () => {
             value: 'Hello',
             other: 'Ed',
           },
-        }
+        },
       )
     }).not.toThrow()
     expect(wrapper.vm.$coerced.other).toBe('Hello Ed!')
@@ -102,7 +102,7 @@ describe('VueCoerceProps', () => {
           value: 'Hi',
           trimmed: 'hey',
         },
-      }
+      },
     )
     // trigger a call
     expect(wrapper.vm.$coerced).toBeDefined()
