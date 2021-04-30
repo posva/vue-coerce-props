@@ -1213,9 +1213,9 @@
     "@types/yargs-parser" "*"
 
 "@vue/test-utils@^1.0.0-beta.26":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-1.1.2.tgz#fdb487448dceefeaf3d01d465f7c836a3d666dbc"
-  integrity sha512-utbIL7zn9c+SjhybPwh48lpWCiluFCbP1yyRNAy1fQsw/6hiNFioaWy05FoVAFIZXC5WwBf+5r4ypfM1j/nI4A==
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@vue/test-utils/-/test-utils-1.1.4.tgz#a9acb32ea1fa4535b2e1ce5ca100bceb4fade2db"
+  integrity sha512-9BeL8IqGvJKy553lq/07rhYURQkpS/k+j19rJ/4eDpGJk7z872M0YrBWFhjS14yMKlvYVYOCfWnVIXyrAx0xNw==
   dependencies:
     dom-event-types "^1.0.0"
     lodash "^4.17.15"
